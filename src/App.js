@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -38,6 +37,7 @@ class App extends Component {
          tipPercent
     },this.calculateTotal)
   }
+  
 
   calculateTotal(){
     const {bill,tax,tipPercent} = this.state;
@@ -58,22 +58,22 @@ class App extends Component {
 
 
   render() {
-   console.log("state", this.state); 
    const { tax, total} = this.state
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src="https://www.socialenterprisemark.org.uk/wp-content/uploads/2016/07/Dollar-icon.png" className="App-logo" alt="logo" />
           <h1 className="App-title">Tip Calculator</h1>
         </header>
+        <div className="wrapper">
         <div className="tip-box">
-          <p>Bill:</p><span>$</span><input type="text" onChange={e => this.handleBillChange(e.target.value)}/> 
+          <p>Bill:</p><span>$</span><input type="number" onChange={e => this.handleBillChange(e.target.value)}/> 
           <p>Tax:</p><h3>${tax}</h3>
-          <p>Tip Percentage:</p><input type="text" onChange={e => this.handleTipChange(e.target.value)}/><span>%</span>
+          <p>Tip Percentage:</p><input type="number" onChange={e => this.handleTipChange(e.target.value)}/><span>%</span>
           <p>Total Bill:</p><h3>${total}</h3>
-         <div> <button>Pay Now</button> </div>
+         <div> <button onClick={()=> alert(`Received Payment: $${total}`)}>Pay Now</button> </div>
         </div>
-        
+        </div>  
       </div>
     );
   }
