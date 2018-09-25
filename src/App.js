@@ -22,7 +22,7 @@ class App extends Component {
   calculateTax(){
     const { bill } = this.state;
 
-    let tax = bill * 0.086
+    let tax = bill * 0.86
     
     return(
       this.setState({
