@@ -1,3 +1,3 @@
 # Tip Calculator
 
-![ezgif com-video-to-gif 5](https://user-images.githubusercontent.com/29646098/45985384-d9c43f80-c01a-11e8-9010-9cacd75d03c2.gif)
+![ezgif com-video-to-gif 6](https://user-images.githubusercontent.com/29646098/45986096-37a65680-c01e-11e8-8ff6-a804992dc05d.gif)
