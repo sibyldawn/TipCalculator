@@ -13,13 +13,13 @@ class App extends Component {
     }
   }
 
-  handleBillChange(bill){
+  handleBillChange = (bill) =>{
     this.setState({
          bill
     },this.calculateTax())
   }
   
-  calculateTax(){
+  calculateTax = () => {
     const { bill } = this.state;
 
     let tax = bill * 0.86
@@ -32,14 +32,14 @@ class App extends Component {
   }
 
 
-  handleTipChange(tipPercent){
+  handleTipChange = (tipPercent) => {
     this.setState({
          tipPercent
     },this.calculateTotal)
   }
   
 
-  calculateTotal(){
+  calculateTotal = () => {
     const {bill,tax,tipPercent} = this.state;
     
     let subtotal = +bill + +tax;
