@@ -60,7 +60,7 @@ class App extends Component {
   render() {
    const { tax, total} = this.state
     return (
-      <div className="App">
+      <div className="App" data-test="component-app">
         <header className="App-header">
           <img src="https://www.socialenterprisemark.org.uk/wp-content/uploads/2016/07/Dollar-icon.png" className="App-logo" alt="logo" />
           <h1 className="App-title">Tip Calculator</h1>
