@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="https://www.socialenterprisemark.org.uk/wp-content/uploads/2016/07/Dollar-icon.png"
+    />
+    <h1
+      className="App-title"
+    >
+      Tip Calculator
+    </h1>
+  </header>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="tip-box"
+    >
+      <p>
+        Bill:
+      </p>
+      <span>
+        $
+      </span>
+      <input
+        onChange={[Function]}
+        type="number"
+      />
+      <p>
+        Tax:
+      </p>
+      <h3>
+        $
+        0
+      </h3>
+      <p>
+        Tip Percentage:
+      </p>
+      <input
+        onChange={[Function]}
+        type="number"
+      />
+      <span>
+        %
+      </span>
+      <p>
+        Total Bill:
+      </p>
+      <h3>
+        $
+        0
+      </h3>
+      <div>
+         
+        <button
+          onClick={[Function]}
+        >
+          Pay Now
+        </button>
+         
+      </div>
+    </div>
+  </div>
+</div>
+`;
